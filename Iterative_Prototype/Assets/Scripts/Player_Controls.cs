@@ -31,7 +31,7 @@ public class Player_Controls : MonoBehaviour
     }
     private void FixedUpdate()
     {
-    /*    rigidbodyComponent.Move(horizontalInput * Time.fixedDeltaTime, false, false);*/
+
         rigidbodyComponent.velocity = new Vector3(horizontalInput * Time.fixedDeltaTime, GetComponent<Rigidbody>().velocity.y, 0);
 
         if (Physics.OverlapSphere(groundCheckTransform.position, 0.1f, playerMask).Length == 0)

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 075ee8ecd967f22479f3a91999746725
+guid: 8b046d2514ee632449306accf9395ada
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,9 +9,8 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Bangers
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+  - Mario Kart DS
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
