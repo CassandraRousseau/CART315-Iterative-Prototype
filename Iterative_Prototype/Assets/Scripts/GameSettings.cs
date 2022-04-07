@@ -9,9 +9,7 @@ bool gameHasEnded = false;
     {
         if (gameHasEnded == false) {
             gameHasEnded = true;
-            Debug.Log("GAME OVER");
             Invoke("Restart", restartDelay);
-       
         }
       
     }

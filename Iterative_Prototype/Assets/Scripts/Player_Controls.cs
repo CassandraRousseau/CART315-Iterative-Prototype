@@ -49,7 +49,6 @@ public class Player_Controls : MonoBehaviour
 
         if (rigidbodyComponent.position.y < 0.1f)
         {
-            Debug.Log("rigidbodyComponent.position.y");
             FindObjectOfType<GameSettings>().EndGame();
         }
     }
