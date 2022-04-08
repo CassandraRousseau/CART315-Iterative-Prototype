@@ -1,22 +1,24 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class GameSettings : MonoBehaviour
 {
-bool gameHasEnded = false;
+    bool gameHasEnded = false;
     public float restartDelay = 1f;
     public void EndGame()
     {
-        if (gameHasEnded == false) {
+        if (gameHasEnded == false)
+        {
             gameHasEnded = true;
             Invoke("Restart", restartDelay);
         }
-      
+
     }
 
-    void Restart() {
+    void Restart()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    
+
     }
-  
+
 }
