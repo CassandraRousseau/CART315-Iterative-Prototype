@@ -41,15 +41,15 @@ public class Player_Controls : MonoBehaviour
         if (jumpKeyPressed)
         {
 
-            float jumpPower = 7f;
+            float jumpPower = 6f;
 
             rigidbodyComponent.AddForce(Vector3.up * jumpPower, ForceMode.VelocityChange);
             jumpKeyPressed = false;
         }
 
-        if (rigidbodyComponent.position.y < 0.1f)
+        if (rigidbodyComponent.position.y < 0.2f)
         {
-            FindObjectOfType<GameSettings>().EndGame();
+            FindObjectOfType<GameSettings>().Awake();
         }
     }
 

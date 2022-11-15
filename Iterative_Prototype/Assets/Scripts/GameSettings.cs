@@ -4,21 +4,23 @@ using UnityEngine.SceneManagement;
 public class GameSettings : MonoBehaviour
 {
     bool gameHasEnded = false;
-    public float restartDelay = 1f;
-    public void EndGame()
+ private static GameSettings instance;
+  
+     void Awake()
     {
-        if (gameHasEnded == false)
+
+        if(instance == null)
         {
-            gameHasEnded = true;
-            Invoke("Restart", restartDelay);
+            instance = this;
+            DontDestroyOnLoad(instance);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+    
 
     }
 
-    void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-    }
 
 }
